@@ -11,6 +11,10 @@ export default {
     text: String,
     color: String,
   },
-  methods: {},
+  methods: {
+    onClick() {
+      console.log('click');
+    },
+  },
 };
 </script>
