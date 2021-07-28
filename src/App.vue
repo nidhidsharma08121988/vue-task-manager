@@ -1,7 +1,13 @@
 <template>
   <div class="container">
-    <Header heading="Task Manager" />
-    <AddTask @add-task="addTask" />
+    <Header
+      :showAddTask="showAddTask"
+      heading="Task Manager"
+      @toggle-add-task="toggleAddTask"
+    />
+    <div v-show="showAddTask">
+      <AddTask @add-task="addTask" />
+    </div>
     <Tasks
       @toggle-reminder="toggleReminder"
       @delete-task="deleteTask"
@@ -24,6 +30,7 @@ export default {
   data() {
     return {
       tasks: [],
+      showAddTask: false,
     };
   },
   created() {
@@ -69,6 +76,9 @@ export default {
     },
     addTask(task) {
       this.tasks = [task, ...this.tasks];
+    },
+    toggleAddTask() {
+      this.showAddTask = !this.showAddTask;
     },
   },
 };
