@@ -22,7 +22,7 @@
       "id": 4,
       "text": "Make your own project in Vue",
       "day": "March 1st at 12:30pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 5,
