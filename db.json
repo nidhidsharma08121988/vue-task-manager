@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Got to school",
+      "day": "March 1st at 2:30pm",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "Buy stationery",
+      "day": "March 3rd at 1:30pm",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Learn Vue",
+      "day": "March 3rd at 11:00am",
+      "reminder": true
+    },
+    {
+      "id": 4,
+      "text": "Make your own project in Vue",
+      "day": "March 1st at 12:30pm",
+      "reminder": true
+    },
+    {
+      "id": 5,
+      "text": "Learn to use react transition",
+      "day": "March 1st at 12:30pm",
+      "reminder": true
+    }
+  ]
+}
